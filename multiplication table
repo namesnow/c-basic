@@ -1,0 +1,28 @@
+#include <stdio.h>
+int main(int argc, char const *argv[])
+{
+	int x=1;
+	int y;
+	int m=1;
+	while(m<10){
+      x=1;
+      
+      while(x<=m){
+      	
+        y=x*m;
+
+        printf("%d*%d=%d ",x,m,y );
+        x++;   
+        
+        }
+    printf("\n");
+    
+    m++;
+
+    
+      
+       
+
+	}
+	return 0;
+}

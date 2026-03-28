@@ -1,0 +1,47 @@
+#include <stdio.h>
+int main(int argc, char const *argv[])
+{
+	int x;
+	scanf("%d",&x);
+	
+   int i=2;
+   int m=1;
+   do
+   {
+   	m *= 10;
+   	i++;
+   } while (i<=x);
+   printf("%d\n",m);
+   
+   int n;
+   n=m;
+   while(n<m*10){
+  
+    int sum=0;
+    int f;
+    int j=n;
+    do
+    {
+      f=j%10;
+      j/=10;
+   
+      
+      int p=f;
+      int k=1;
+      while(k<x){
+       p*=f;
+       k++;
+       
+      }sum+=p;
+       } while (j>0);
+
+      if (sum==n)
+         {
+           printf("%d\n",n );
+         }   
+      n++;
+
+   }
+  
+   return 0;
+}

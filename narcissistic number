@@ -11,10 +11,7 @@ int main(int argc, char const *argv[])
    	m *= 10;
    	i++;
    } while (i<=x);
-   printf("%d\n",m);
-   
-   int n;
-   n=m;
+   int n = m;
    while(n<m*10){
   
     int sum=0;

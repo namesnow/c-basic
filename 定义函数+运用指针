@@ -1,0 +1,31 @@
+#include <stdio.h>
+ int myf(int *arr ,int len){
+     
+     int sum=0;
+     for (int i = 0; i < len; ++i)
+     {
+     	sum += *(arr+i);
+     }
+	return (int)sum/len;
+}
+
+int main(int argc, char const *argv[])
+{
+    printf("请输入整数\n");
+    int arr[100];
+    int h=0;
+    while(h<100){
+        scanf("%d",&arr[h]);
+        
+        if (arr[h]==-1){
+            break;
+
+        }
+       h++;
+    }
+    
+
+
+    printf("平均值=%d\n",myf(arr,h) );
+	return 0;
+}
